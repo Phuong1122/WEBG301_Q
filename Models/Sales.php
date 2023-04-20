@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Sales extends Model
 {
@@ -18,12 +19,12 @@ class Sales extends Model
 
     public function Customers(): BelongsTo
     {
-        return $this->belongsToMany(Customers::class);
+        return $this->belongsTo(Customers::class);
     }
 
     public function BoardGames(): BelongsTo
     {
-        return $this->belongsToMany(BoardGames::class);
+        return $this->belongsTo(BoardGames::class);
     }
 
 }

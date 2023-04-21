@@ -15,12 +15,24 @@ class BoardGames extends Model
         'Name',
         'Category',
         'Description',
-        'Number',
+        'Quantity',
         'Price',
     ];
 
-    public function Sale()
+    public function Cutomers()
     {
-        return $this->hasOne(Sales::class, 'boardgames_id', 'id');
+        return $this->belongsToMany(Customers::class, 'boardgames_name', 'boardgames_id', 'customers_id');
     }
+
+    public function Sales()
+    {
+        return $this->hasOne(Sales::class, 'boardgames_id', 'sales_id');
+    }
+
+    public function Category()
+    {
+        return $this->belongsToMany(Category::class, 'boardgames_id', 'boardgames_name', 'category_name', 'category_id');
+    }
+
+    
 }

@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BoardGames;
+use App\Models\Customers;
+use App\Models\Sales;
 use Illuminate\Http\Request;
 
 class SalesController extends Controller
@@ -11,7 +14,8 @@ class SalesController extends Controller
      */
     public function index()
     {
-        //
+        $sales = Sales::all();
+        return view('sales.index', ['sales' => $sales]);
     }
 
     /**
@@ -19,7 +23,9 @@ class SalesController extends Controller
      */
     public function create()
     {
-        //
+        $boardgames = BoardGames::all();
+        $customers = Customers::all();
+        return view('sales.create', ['boardgames' => $boardgames, 'customers' => $customers]);
     }
 
     /**
@@ -27,7 +33,12 @@ class SalesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $sale = new Sales();
+        $sale->ID = $request->input('ID');
+        $sale->boardgames_id = $request->input('boardgames_id');
+        $sale->customer_id = $request->input('customer_id');
+        $sale->save();
+        return redirect()->route('sales.index');
     }
 
     /**
@@ -35,7 +46,8 @@ class SalesController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $sale = Sales::find($id);
+        return view('sales.show', ['sale' => $sale]);
     }
 
     /**
@@ -43,7 +55,10 @@ class SalesController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $boardgames = Boardgames::all();
+        $customers = Customers::all();
+        $sale = Sales::find($id);
+        return view('sales.edit', ['sale' => $sale, 'boardgames' => $boardgames, 'customers' => $customers]);
     }
 
     /**
@@ -51,7 +66,12 @@ class SalesController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $sale = Sales::find($id);
+        $sale->ID = $request->input('ID');
+        $sale->boardgames_id = $request->input('boardgames_id');
+        $sale->customer_id = $request->input('customer_id');
+        $sale->save();
+        return redirect()->route('sales.index');
     }
 
     /**
@@ -59,6 +79,8 @@ class SalesController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $sale = Sales::find($id);
+        $sale->delete();
+        return redirect()->route('sales.index');
     }
 }

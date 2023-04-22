@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('board_games', function (Blueprint $table) {
             $table->id();
+            $table->string('ID');
+            $table->string('Name');
+            $table->string('Category');
+            $table->string('Description');
+            $table->string('Quantity');
+            $table->string('Price');
             $table->timestamps();
         });
     }

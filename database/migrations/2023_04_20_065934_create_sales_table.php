@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('sales', function (Blueprint $table) {
             $table->id();
+            $table->string('ID');
+            $table->string('boardgames_id');
+            $table->string('customer_id');
             $table->timestamps();
         });
     }

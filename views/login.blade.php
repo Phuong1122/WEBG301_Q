@@ -1,37 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Đăng nhập</title>
-  </head>
-  <body>
-    <h1>Đăng nhập</h1>
-    @if ($errors->any())
-      <div>
-        <strong>Lỗi:</strong>
-        <ul>
-          @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
-          @endforeach
-        </ul>
-      </div>
-    @endif
+<head>
+    <title>Login</title>
+</head>
+<body>
     <form method="POST" action="{{ route('login') }}">
-      @csrf
-      <div>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required autofocus>
-      </div>
-      <div>
-        <label for="password">Mật khẩu:</label>
-        <input type="password" name="password" id="password" required>
-      </div>
-      <div>
-        <input type="checkbox" name="remember" id="remember">
-        <label for="remember">Ghi nhớ đăng nhập</label>
-      </div>
-      <div>
-        <button type="submit">Đăng nhập</button>
-      </div>
+        @csrf
+
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" required autofocus>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input id="password" type="password" name="password" required>
+        </div>
+
+        <div>
+            <input type="checkbox" name="remember" id="remember">
+            <label for="remember">Remember Me</label>
+        </div>
+
+        <div>
+            <button type="submit">Login</button>
+        </div>
     </form>
-  </body>
+</body>
 </html>

@@ -26,8 +26,8 @@
         <input type="password" name="password" id="password" required>
       </div>
       <div>
-        <input type="checkbox" name="remember" id="remember">
         <label for="remember">Ghi nhớ đăng nhập</label>
+        <input type="checkbox" name="remember" id="remember">
       </div>
       <div>
         <button type="submit">Đăng nhập</button>

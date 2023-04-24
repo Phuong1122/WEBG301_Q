@@ -8,8 +8,8 @@
     <p>Xin chào, {{ Auth::user()->name }}</p>
     <nav>
       <ul>
-        <li><a href="{{ route('games.index') }}">Danh sách boardgame</a></li>
-        <li><a href="{{ route('games.create') }}">Thêm boardgame mới</a></li>
+        <li><a href="{{ route('boardgames.index') }}">Danh sách boardgame</a></li>
+        <li><a href="{{ route('boardgames.create') }}">Thêm boardgame mới</a></li>
         <li><a href="{{ route('logout') }}">Đăng xuất</a></li>
       </ul>
     </nav>

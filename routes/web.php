@@ -13,10 +13,10 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index']);
 
-    Route::get('/games', [BoardGameController::class, 'index']);
-    Route::get('/games/create', [BoardGameController::class, 'create']);
-    Route::post('/games', [BoardGameController::class, 'store']);
-    Route::get('/games/{id}/edit', [BoardGameController::class, 'edit']);
-    Route::put('/games/{id}', [BoardGameController::class, 'update']);
-    Route::delete('/games/{id}', [BoardGameController::class, 'destroy']);
+    Route::get('/games', [BoardGamesController::class, 'index']);
+    Route::get('/games/create', [BoardGamesController::class, 'create']);
+    Route::post('/games', [BoardGamesController::class, 'store']);
+    Route::get('/games/{id}/edit', [BoardGamesController::class, 'edit']);
+    Route::put('/games/{id}', [BoardGamesController::class, 'update']);
+    Route::delete('/games/{id}', [BoardGamesController::class, 'destroy']);
 });

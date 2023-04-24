@@ -2,16 +2,21 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BoardGamesController;
-use App\Http\Controllers\CategoriesController;
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\SalesController;
+use App\Http\Controllers\CustomersController;
+use App\Http\Controllers\CartsController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
 
 Route::resource('boardgames', BoardGamesController::class);
-Route::resource('categories', CategoriesController::class);
 
-Route::get('login', [LoginController::class, 'index'])->name('login.index');
-Route::post('login', [LoginController::class, 'login'])->name('login.login');
-Route::get('logout', [LoginController::class, 'logout'])->name('login.logout');
+Route::resource('categories', CategoryController::class);
+
+Route::resource('sales', SalesController::class);
+
+Route::resource('customers', CustomersController::class);
+
+Route::resource('carts', CartsController::class);

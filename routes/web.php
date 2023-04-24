@@ -1,22 +1,17 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\BoardGamesController;
+use App\Http\Controllers\CategoriesController;
+use App\Http\Controllers\LoginController;
 
-
-Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
-Route::post('/login', [LoginController::class, 'login']);
-Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
-
-Route::middleware(['auth'])->group(function () {
-    Route::get('/dashboard', [DashboardController::class, 'index']);
-
-    Route::get('/games', [BoardGamesController::class, 'index']);
-    Route::get('/games/create', [BoardGamesController::class, 'create']);
-    Route::post('/games', [BoardGamesController::class, 'store']);
-    Route::get('/games/{id}/edit', [BoardGamesController::class, 'edit']);
-    Route::put('/games/{id}', [BoardGamesController::class, 'update']);
-    Route::delete('/games/{id}', [BoardGamesController::class, 'destroy']);
+Route::get('/', function () {
+    return view('welcome');
 });
+
+Route::resource('boardgames', BoardGamesController::class);
+Route::resource('categories', CategoriesController::class);
+
+Route::get('login', [LoginController::class, 'index'])->name('login.index');
+Route::post('login', [LoginController::class, 'login'])->name('login.login');
+Route::get('logout', [LoginController::class, 'logout'])->name('login.logout');

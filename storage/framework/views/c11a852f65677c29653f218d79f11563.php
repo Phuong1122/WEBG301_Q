@@ -1,0 +1,1 @@
+<?php /**PATH E:\HocTap\WEBG301\laragon\www\WEBG301-GCH1101\BoardGameSeller\resources\views/login.blade.php ENDPATH**/ ?>

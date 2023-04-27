@@ -1,6 +1,5 @@
 <?php
-
-use App\Models\User;
+use App\Http\Controllers\Front;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [Front\Homecontroller::class, 'index']);
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::get('/shop/product/{id}', [Front\shopController::class, 'show']);
+Route::group(['namespace'=>'Admin'],function(){
+    Route::group(['prefix'=>'login'],function(){
+        Route::get('/','LoginController@getLogin');
+    });
+});
+
+Route::get('/',[Front\HomeController::class,'index']);
+
+Route::prefix('shop')->group(function () {
+    Route::get('/product/{id}',[Front\ShopController::class,'show']);
+    Route::post('/product/{id}',[Front\ShopController::class,'postCommet']);
+
+    Route::get('/',[Front\ShopController::class,'index']);
+
+    Route::get('/{categoryName}',[Front\ShopController::class,'category']);
+});

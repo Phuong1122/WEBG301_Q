@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,12 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [Front\Homecontroller::class, 'index']);
 
-Route::group(['namespace'=>'Admin'],function(){
-    Route::group(['prefix'=>'login'],function(){
-        Route::get('/','LoginController@getLogin');
-    });
-});
+Route::get('/shop/product/{id}', [Front\shopController::class, 'show']);

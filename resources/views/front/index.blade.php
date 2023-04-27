@@ -50,7 +50,7 @@
                     <a href="login.html" class="login-panel"><i class="fa fa-user"></i>Login</a>
                     <div class="lan-selector">
                         <select class="language_drop" name="countries" id="countries" style="width:380px;">
-                            <option value="yt" data-image="img/flag-1.jpg" data-imagecss="flag yt" data-title="English">English</option>
+                            <option value="yt" data-image="front/img/flag-1.jpg" data-imagecss="flag yt" data-title="English">English</option>
                         </select>
                     </div>
 
@@ -68,7 +68,7 @@
                     <div class="col-lg-2 col-md-2">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="img/logo.png" height="25" alt="">
+                                <img src="front/img/logo.png" height="25" alt="">
                             </a>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
                                         <table>
                                             <tbody>
                                                 <tr>
-                                                    <td class="si-pic"> <img src="img/select-product-1.jpg"></td>
+                                                    <td class="si-pic"> <img src="front/img/select-product-1.jpg"></td>
                                                     <td class="si-text">
                                                         <div class="product-selected">
                                                             <p>123213213</p>
@@ -102,7 +102,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="si-pic"> <img src="img/select-product-2.jpg"></td>
+                                                    <td class="si-pic"> <img src="front/img/select-product-2.jpg"></td>
                                                     <td class="si-text">
                                                         <div class="product-selected">
                                                             <p>123213213</p>
@@ -185,33 +185,351 @@
     </header>
     <!-- Header Section End -->
 
+    <!-- Hero Section Begin -->
+    <section class="hero-section">
+        <div class="hero-item owl-carousel">
+            <div class="single-hero-items set-bg" data-setgb="front/img/hero-1.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <span>Thanh Long</span>
+                            <h1>Thanh Long dep trai</h1>
+                            <p>Thanh Long dep trai qua</p>
+                            <a href="#" class="primary-btn">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="off-card">
+                        <h2>Sale<span>100%</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-item owl-carousel">
+            <div class="single-hero-items set-bg" data-setgb="front/img/hero-2.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <span>Thanh Long</span>
+                            <h1>Thanh Long dep trai</h1>
+                            <p>Thanh Long dep trai qua</p>
+                            <a href="#" class="primary-btn">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="off-card">
+                        <h2>Sale<span>100%</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Banner Section Begin -->
+    <div class="banner-section spad">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="single-banner">
+                        <img src="front/img/banner-1.jpg">
+                        <div class="inner-text">
+                            <h4>Thanh Long</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-banner">
+                        <img src="front/img/banner-2.jpg">
+                        <div class="inner-text">
+                            <h4>Thanh Long dep</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-banner">
+                        <img src="front/img/banner-3.jpg">
+                        <div class="inner-text">
+                            <h4>Thanh Long trai</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Section End -->
+
+    <!-- Thanh Long Banner Section Begin -->
+    <section class="women-banner spad">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="product-large set-bg" data-setgb="front/img/products/women-large.jpg">
+                        <h2>Long</h2>
+                        <a href="#">Discover More</a>
+                    </div>
+                </div>
+                <div class="col-lg-8 offset-lg-1">
+                    <div class="filter-control">
+                        <ul>
+                            <li class="active">BoardGame chien thuat</li>
+                            <li>BoardGame doi khang</li>
+                            <li>BoardGame nau an</li>
+                            <li>BoardGame tinh yeu</li>
+                        </ul>
+                    </div>
+                    <div class="product-slider owl-carousel">
+                        <div class="product-item">
+                            <div class="pi-pic">
+                                <img src="front/img/products/women-1.jpg" alt="">
+                                <div class="sale"> Sale </div>
+                                <div class="icon">
+                                    <i class="icon_heart_alt"></i>
+                                </div>
+                                <ul>
+                                    <li class="w-icon active"><a href=""><i class="icon_bag_alt"></i></a></li>
+                                    <li class="quick-view"><a href="product.html">Quick View</a></li>
+                                    <li class="w-icon"><a href=""><i class="fa fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="pi-text">
+                                <div class="category-name">Coat</div>
+                            <a href="">
+                                <h5>Thanh Long</h5>
+                            </a>
+                                <div class="product-price">
+                                    150VND
+                                    <span>150$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="pi-pic">
+                                <img src="front/img/products/women-2.jpg" alt="">
+                                <div class="sale"> Sale </div>
+                                <div class="icon">
+                                    <i class="icon_heart_alt"></i>
+                                </div>
+                                <ul>
+                                    <li class="w-icon active"><a href=""><i class="icon_bag_alt"></i></a></li>
+                                    <li class="quick-view"><a href="product.html">Quick View</a></li>
+                                    <li class="w-icon"><a href=""><i class="fa fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="pi-text">
+                                <div class="category-name">Coat</div>
+                            <a href="">
+                                <h5>Thanh Long</h5>
+                            </a>
+                                <div class="product-price">
+                                    150VND
+                                    <span>150$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="pi-pic">
+                                <img src="front/img/products/women-3.jpg" alt="">
+                                <div class="sale"> Sale </div>
+                                <div class="icon">
+                                    <i class="icon_heart_alt"></i>
+                                </div>
+                                <ul>
+                                    <li class="w-icon active"><a href=""><i class="icon_bag_alt"></i></a></li>
+                                    <li class="quick-view"><a href="product.html">Quick View</a></li>
+                                    <li class="w-icon"><a href=""><i class="fa fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="pi-text">
+                                <div class="category-name">Coat</div>
+                            <a href="">
+                                <h5>Thanh Long</h5>
+                            </a>
+                                <div class="product-price">
+                                    150VND
+                                    <span>150$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="pi-pic">
+                                <img src="front/img/products/women-4.jpg" alt="">
+                                <div class="sale"> Sale </div>
+                                <div class="icon">
+                                    <i class="icon_heart_alt"></i>
+                                </div>
+                                <ul>
+                                    <li class="w-icon active"><a href=""><i class="icon_bag_alt"></i></a></li>
+                                    <li class="quick-view"><a href="product.html">Quick View</a></li>
+                                    <li class="w-icon"><a href=""><i class="fa fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="pi-text">
+                                <div class="category-name">Coat</div>
+                            <a href="">
+                                <h5>Thanh Long</h5>
+                            </a>
+                                <div class="product-price">
+                                    150VND
+                                    <span>150$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Thanh Long Banner Section End -->
+
+    <!-- Thanh Long 1 Banner Section Begin -->
+    <section class="women-banner spad">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="product-large set-bg" data-setgb="front/img/products/man-large.jpg">
+                        <h2>Long</h2>
+                        <a href="#">Discover More</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1">
+                    <div class="filter-control">
+                        <ul>
+                            <li class="active">BoardGame chien thuat</li>
+                            <li>BoardGame doi khang</li>
+                            <li>BoardGame nau an</li>
+                            <li>BoardGame tinh yeu</li>
+                        </ul>
+                    </div>
+                    <div class="product-slider owl-carousel">
+                        <div class="product-item">
+                            <div class="pi-pic">
+                                <img src="front/img/products/man-1.jpg" alt="">
+                                <div class="sale"> Sale </div>
+                                <div class="icon">
+                                    <i class="icon_heart_alt"></i>
+                                </div>
+                                <ul>
+                                    <li class="w-icon active"><a href=""><i class="icon_bag_alt"></i></a></li>
+                                    <li class="quick-view"><a href="product.html">Quick View</a></li>
+                                    <li class="w-icon"><a href=""><i class="fa fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="pi-text">
+                                <div class="category-name">Coat</div>
+                            <a href="">
+                                <h5>Thanh Long</h5>
+                            </a>
+                                <div class="product-price">
+                                    150VND
+                                    <span>150$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="pi-pic">
+                                <img src="front/img/products/man-2.jpg" alt="">
+                                <div class="sale"> Sale </div>
+                                <div class="icon">
+                                    <i class="icon_heart_alt"></i>
+                                </div>
+                                <ul>
+                                    <li class="w-icon active"><a href=""><i class="icon_bag_alt"></i></a></li>
+                                    <li class="quick-view"><a href="product.html">Quick View</a></li>
+                                    <li class="w-icon"><a href=""><i class="fa fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="pi-text">
+                                <div class="category-name">Coat</div>
+                            <a href="">
+                                <h5>Thanh Long</h5>
+                            </a>
+                                <div class="product-price">
+                                    150VND
+                                    <span>150$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="pi-pic">
+                                <img src="front/img/products/man-3.jpg" alt="">
+                                <div class="sale"> Sale </div>
+                                <div class="icon">
+                                    <i class="icon_heart_alt"></i>
+                                </div>
+                                <ul>
+                                    <li class="w-icon active"><a href=""><i class="icon_bag_alt"></i></a></li>
+                                    <li class="quick-view"><a href="product.html">Quick View</a></li>
+                                    <li class="w-icon"><a href=""><i class="fa fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="pi-text">
+                                <div class="category-name">Coat</div>
+                            <a href="">
+                                <h5>Thanh Long</h5>
+                            </a>
+                                <div class="product-price">
+                                    150VND
+                                    <span>150$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="pi-pic">
+                                <img src="front/img/products/man-4.jpg" alt="">
+                                <div class="sale"> Sale </div>
+                                <div class="icon">
+                                    <i class="icon_heart_alt"></i>
+                                </div>
+                                <ul>
+                                    <li class="w-icon active"><a href=""><i class="icon_bag_alt"></i></a></li>
+                                    <li class="quick-view"><a href="product.html">Quick View</a></li>
+                                    <li class="w-icon"><a href=""><i class="fa fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="pi-text">
+                                <div class="category-name">Coat</div>
+                            <a href="">
+                                <h5>Thanh Long</h5>
+                            </a>
+                                <div class="product-price">
+                                    150VND
+                                    <span>150$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Thanh Long 1 Banner Section End -->
+
     <!-- Partner Logo Section Begin -->
     <div class="partner-logo">
         <div class="container">
             <div class="logo-carousel owl-carousel">
                 <div class="logo-item">
                     <div class="tabelcell-inner">
-                        <img src="img/logo-carousel/logo1.png">
+                        <img src="front/img/logo-carousel/logo1.png">
                     </div>
                 </div>
                 <div class="logo-item">
                     <div class="tabelcell-inner">
-                        <img src="img/logo-carousel/logo2.png">
+                        <img src="front/img/logo-carousel/logo2.png">
                     </div>
                 </div>
                 <div class="logo-item">
                     <div class="tabelcell-inner">
-                        <img src="img/logo-carousel/logo3.png">
+                        <img src="front/img/logo-carousel/logo3.png">
                     </div>
                 </div>
                 <div class="logo-item">
                     <div class="tabelcell-inner">
-                        <img src="img/logo-carousel/logo4.png">
+                        <img src="front/img/logo-carousel/logo4.png">
                     </div>
                 </div>
                 <div class="logo-item">
                     <div class="tabelcell-inner">
-                        <img src="img/logo-carousel/logo5.png">
+                        <img src="front/img/logo-carousel/logo5.png">
                     </div>
                 </div>
             </div>
@@ -227,7 +545,7 @@
                     <div class="footer-left">
                         <div class="footer-logo">
                             <a href="index.html">
-                                <img src="img/footer-logo.png" height="25" alt="">
+                                <img src="front/img/footer-logo.png" height="25" alt="">
                             </a>
                         </div>
                         <ul>
@@ -286,7 +604,7 @@
                             <p>Thanh Long day, ban tim ai?</p>
                         </div>
                         <div class="payment-pic">
-                            <img src="img/payment-method.png" alt="">
+                            <img src="front/img/payment-method.png" alt="">
                         </div>
                     </div>
                 </div>

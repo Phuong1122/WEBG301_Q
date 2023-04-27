@@ -24,48 +24,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="filter-widget">
-                        <h4 class="fw-title">Categories</h4>
-                        <ul class="filter-categories">
-                            <li><a href="#">BoardGame chien thuat</a></li>
-                            <li><a href="#">BoardGame chien thuat</a></li>
-                            <li><a href="#">BoardGame chien thuat</a></li>
-                            <li><a href="#">BoardGame chien thuat</a></li>
-                        </ul>
-                    </div>
-                    <div class="filter-widget">
-                        <h4 class="fw-title">Brand</h4>
-                         <div class="fw-brand-check">
-                            <div class="bc-item">
-                                <label for="bc-calvin" > 
-                                    Thanh
-                                    <input type="checkbox" id="bc-calvin">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="bc-item">
-                                <label for="bc-calvin" > 
-                                    Thanh
-                                    <input type="checkbox" id="bc-calvin">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="bc-item">
-                                <label for="bc-calvin" > 
-                                    Thanh
-                                    <input type="checkbox" id="bc-calvin">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="bc-item">
-                                <label for="bc-calvin" > 
-                                    Thanh
-                                    <input type="checkbox" id="bc-calvin">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
+                    @include('front.shop.component.product-sidebar-filter')
                 </div>
                 <div class="col-lg-9">
                     <div class="row">

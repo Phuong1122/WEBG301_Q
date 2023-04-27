@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 
 class ShopController extends Controller
 {
+$categories = ProductCategory::all();
+
     //
     public function show($id) {
         $product = Product::findOrFail($id);
@@ -19,5 +21,21 @@ class ShopController extends Controller
         }
 
         return view('front.shop.show', compact('product','avgRating'));
+    }
+
+    public function index()
+    {
+        $categories = ProductCategory::all();
+        $products = Product::all();
+        
+        return view('front.shop.index', compact('categories','products'));
+    }
+
+    public function category($categoryName, Request $request) {
+        $categories = ProductCategory::all();
+
+        $products = ProductCategory::where('name', $categoryName)->first()->products->toQuery();
+    
+        return view('front.shop.category', compact('categories','products'));
     }
 }

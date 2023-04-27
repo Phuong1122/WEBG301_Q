@@ -47,7 +47,7 @@
                 </div>
     
                 <div class="ht-right">
-                    <a href="login.html" class="login-panel"><i class="fa fa-user"></i>Login</a>
+                    <a href="login.blade.php" class="login-panel"><i class="fa fa-user"></i>Login</a>
                     <div class="lan-selector">
                         <select class="language_drop" name="countries" id="countries" style="width:380px;">
                             <option value="yt" data-image="front/img/flag-1.jpg" data-imagecss="flag yt" data-title="English">English</option>
@@ -67,7 +67,7 @@
                 <div class="row">
                     <div class="col-lg-2 col-md-2">
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="index.blade.php">
                                 <img src="front/img/logo.png" height="25" alt="">
                             </a>
                         </div>
@@ -121,8 +121,8 @@
                                         <h5>123</h5>
                                     </div>
                                     <div class="select-button">
-                                        <a href="shopping-cart.html" class="primary-btn view-card">View Card</a>
-                                        <a href="check-out.html" class="primary-btn check-out-btn">Check Out</a>
+                                        <a href="shopping-cart.blade.php" class="primary-btn view-card">View Card</a>
+                                        <a href="check-out.blade.php" class="primary-btn check-out-btn">Check Out</a>
                                     </div>
                                 </div>
                             </li>
@@ -162,19 +162,19 @@
                 </div>
                 <nav class="nav-menu mobile-menu">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="index.blade.php">Home</a></li>
+                        <li><a href="shop.blade.php">Shop</a></li>
                         <li><a href=""></a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.blade.php">Blog</a></li>
+                        <li><a href="contact.blade.php">Contact</a></li>
                         <li><a href="">Pages</a>
                             <ul class="dropdown">
-                                <li><a href="blog-details.html">Blog Details</a></li>
-                                <li><a href="shopping-cart.html">Shopping Cart</a></li>
-                                <li><a href="check-out.html">Checkout</a></li>
-                                <li><a href="faq.html">Faq</a></li>
-                                <li><a href="register.html">Register</a></li>
-                                <li><a href="login.html">Login</a></li>
+                                <li><a href="blog-details.blade.php">Blog Details</a></li>
+                                <li><a href="shopping-cart.blade.php">Shopping Cart</a></li>
+                                <li><a href="check-out.blade.php">Checkout</a></li>
+                                <li><a href="faq.blade.php">Faq</a></li>
+                                <li><a href="register.blade.php">Register</a></li>
+                                <li><a href="login.blade.php">Login</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -286,7 +286,7 @@
                                 </div>
                                 <ul>
                                     <li class="w-icon active"><a href=""><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="product.html">Quick View</a></li>
+                                    <li class="quick-view"><a href="product.blade.php">Quick View</a></li>
                                     <li class="w-icon"><a href=""><i class="fa fa-random"></i></a></li>
                                 </ul>
                             </div>
@@ -310,7 +310,7 @@
                                 </div>
                                 <ul>
                                     <li class="w-icon active"><a href=""><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="product.html">Quick View</a></li>
+                                    <li class="quick-view"><a href="product.blade.php">Quick View</a></li>
                                     <li class="w-icon"><a href=""><i class="fa fa-random"></i></a></li>
                                 </ul>
                             </div>
@@ -334,7 +334,7 @@
                                 </div>
                                 <ul>
                                     <li class="w-icon active"><a href=""><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="product.html">Quick View</a></li>
+                                    <li class="quick-view"><a href="product.blade.php">Quick View</a></li>
                                     <li class="w-icon"><a href=""><i class="fa fa-random"></i></a></li>
                                 </ul>
                             </div>
@@ -358,7 +358,7 @@
                                 </div>
                                 <ul>
                                     <li class="w-icon active"><a href=""><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="product.html">Quick View</a></li>
+                                    <li class="quick-view"><a href="product.blade.php">Quick View</a></li>
                                     <li class="w-icon"><a href=""><i class="fa fa-random"></i></a></li>
                                 </ul>
                             </div>
@@ -409,7 +409,7 @@
                                 </div>
                                 <ul>
                                     <li class="w-icon active"><a href=""><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="product.html">Quick View</a></li>
+                                    <li class="quick-view"><a href="product.blade.php">Quick View</a></li>
                                     <li class="w-icon"><a href=""><i class="fa fa-random"></i></a></li>
                                 </ul>
                             </div>
@@ -433,7 +433,7 @@
                                 </div>
                                 <ul>
                                     <li class="w-icon active"><a href=""><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="product.html">Quick View</a></li>
+                                    <li class="quick-view"><a href="product.blade.php">Quick View</a></li>
                                     <li class="w-icon"><a href=""><i class="fa fa-random"></i></a></li>
                                 </ul>
                             </div>
@@ -457,7 +457,7 @@
                                 </div>
                                 <ul>
                                     <li class="w-icon active"><a href=""><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="product.html">Quick View</a></li>
+                                    <li class="quick-view"><a href="product.blade.php">Quick View</a></li>
                                     <li class="w-icon"><a href=""><i class="fa fa-random"></i></a></li>
                                 </ul>
                             </div>
@@ -481,7 +481,7 @@
                                 </div>
                                 <ul>
                                     <li class="w-icon active"><a href=""><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="product.html">Quick View</a></li>
+                                    <li class="quick-view"><a href="product.blade.php">Quick View</a></li>
                                     <li class="w-icon"><a href=""><i class="fa fa-random"></i></a></li>
                                 </ul>
                             </div>
@@ -544,7 +544,7 @@
                 <div class="col-lg-3">
                     <div class="footer-left">
                         <div class="footer-logo">
-                            <a href="index.html">
+                            <a href="index.blade.php">
                                 <img src="front/img/footer-logo.png" height="25" alt="">
                             </a>
                         </div>

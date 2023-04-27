@@ -185,6 +185,20 @@
     </header>
     <!-- Header Section End -->
 
+    <!-- Breadcrumb Section Begin -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-text">
+                        <a href="index.blade.php"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section End -->
+
     <!-- Partner Logo Section Begin -->
     <div class="partner-logo">
         <div class="container">

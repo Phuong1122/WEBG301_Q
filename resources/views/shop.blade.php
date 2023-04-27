@@ -47,7 +47,7 @@
                 </div>
     
                 <div class="ht-right">
-                    <a href="login.html" class="login-panel"><i class="fa fa-user"></i>Login</a>
+                    <a href="login.blade.php" class="login-panel"><i class="fa fa-user"></i>Login</a>
                     <div class="lan-selector">
                         <select class="language_drop" name="countries" id="countries" style="width:380px;">
                             <option value="yt" data-image="img/flag-1.jpg" data-imagecss="flag yt" data-title="English">English</option>
@@ -67,7 +67,7 @@
                 <div class="row">
                     <div class="col-lg-2 col-md-2">
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="index.blade.php">
                                 <img src="img/logo.png" height="25" alt="">
                             </a>
                         </div>
@@ -121,8 +121,8 @@
                                         <h5>123</h5>
                                     </div>
                                     <div class="select-button">
-                                        <a href="shopping-cart.html" class="primary-btn view-card">View Card</a>
-                                        <a href="check-out.html" class="primary-btn check-out-btn">Check Out</a>
+                                        <a href="shopping-cart.blade.php" class="primary-btn view-card">View Card</a>
+                                        <a href="check-out.blade.php" class="primary-btn check-out-btn">Check Out</a>
                                     </div>
                                 </div>
                             </li>
@@ -160,21 +160,21 @@
                         </ul>
                     </div>
                 </div>
-                <nav class="nav-menu mobile-menu">
+                <nav class="nav-menu mobile-menu">  
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="index.blade.php">Home</a></li>
+                        <li class="active"><a href="shop.blade.php">Shop</a></li>
                         <li><a href=""></a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.blade.php">Blog</a></li>
+                        <li><a href="contact.blade.php">Contact</a></li>
                         <li><a href="">Pages</a>
                             <ul class="dropdown">
-                                <li><a href="blog-details.html">Blog Details</a></li>
-                                <li><a href="shopping-cart.html">Shopping Cart</a></li>
-                                <li><a href="check-out.html">Checkout</a></li>
-                                <li><a href="faq.html">Faq</a></li>
-                                <li><a href="register.html">Register</a></li>
-                                <li><a href="login.html">Login</a></li>
+                                <li><a href="blog-details.blade.php">Blog Details</a></li>
+                                <li><a href="shopping-cart.blade.php">Shopping Cart</a></li>
+                                <li><a href="check-out.blade.php">Checkout</a></li>
+                                <li><a href="faq.blade.php">Faq</a></li>
+                                <li><a href="register.blade.php">Register</a></li>
+                                <li><a href="login.blade.php">Login</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -191,13 +191,182 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-text">
-                        <a href="index.blade.php"></a>
+                        <a href="index.blade.php"><i class="fa fa-home"></i>Home</a>
+                        <span>Shop</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Breadcrumb Section End -->
+
+    <!-- Product Shop Section Begin -->
+    <section class="product-shop spad">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-8 order-2 order-lg-1 products-sidebar-filter">
+                <div class="filter-widget">
+                    <h4 class="fw-title">Categories</h4>
+                    <ul class="filter-categories">
+                        <li><a href="#">BoardGame chien thuat</a></li>
+                        <li><a href="#">BoardGame chien thuat</a></li>
+                        <li><a href="#">BoardGame chien thuat</a></li>
+                        <li><a href="#">BoardGame chien thuat</a></li>
+                    </ul>
+                </div>
+                <div class="filter-widget">
+                    <h4 class="fw-title">Brand</h4>
+                    <div class="fw-brand-check">
+                        <div class="bc-item">
+                            <label for="bc-calvin" > 
+                                Thanh
+                                <input type="checkbox" id="bc-calvin">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="bc-item">
+                            <label for="bc-calvin" > 
+                                Thanh
+                                <input type="checkbox" id="bc-calvin">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="bc-item">
+                            <label for="bc-calvin" > 
+                                Thanh
+                                <input type="checkbox" id="bc-calvin">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="bc-item">
+                            <label for="bc-calvin" > 
+                                Thanh
+                                <input type="checkbox" id="bc-calvin">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-9 order-1 order-lg-2">
+                <div class="product-list">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="product-item">
+                                <div class="pi-pic">
+                                    <img src="front/img/products/product-1.jpg" alt="">
+                                    <div class="sale pp-sale">Sale</div>
+                                    <div class="icon">
+                                        <i class="icon_heart_all"></i>
+                                    </div>
+                                    <ul>
+                                        <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
+                                        <li class="quick-view"><a href="product.blade.php">+Quick View</a></li>
+                                        <li class="w-icon"><a href=""><i class="fa fa-random"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="pi-text">
+                                    <div class="category-name">Towel</div>
+                                    <a href="#">
+                                        <h5>Thanh Long dep trai</h5>
+                                    </a>
+                                    <div class="product-price">
+                                        14$
+                                        <span>5000$</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="product-item">
+                                <div class="pi-pic">
+                                    <img src="front/img/products/product-1.jpg" alt="">
+                                    <div class="sale pp-sale">Sale</div>
+                                    <div class="icon">
+                                        <i class="icon_heart_all"></i>
+                                    </div>
+                                    <ul>
+                                        <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
+                                        <li class="quick-view"><a href="product.blade.php">+Quick View</a></li>
+                                        <li class="w-icon"><a href=""><i class="fa fa-random"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="pi-text">
+                                    <div class="category-name">Towel</div>
+                                    <a href="#">
+                                        <h5>Thanh Long dep trai</h5>
+                                    </a>
+                                    <div class="product-price">
+                                        14$
+                                        <span>5000$</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="product-item">
+                                <div class="pi-pic">
+                                    <img src="front/img/products/product-1.jpg" alt="">
+                                    <div class="sale pp-sale">Sale</div>
+                                    <div class="icon">
+                                        <i class="icon_heart_all"></i>
+                                    </div>
+                                    <ul>
+                                        <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
+                                        <li class="quick-view"><a href="product.blade.php">+Quick View</a></li>
+                                        <li class="w-icon"><a href=""><i class="fa fa-random"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="pi-text">
+                                    <div class="category-name">Towel</div>
+                                    <a href="#">
+                                        <h5>Thanh Long dep trai</h5>
+                                    </a>
+                                    <div class="product-price">
+                                        14$
+                                        <span>5000$</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="product-item">
+                                <div class="pi-pic">
+                                    <img src="front/img/products/product-1.jpg" alt="">
+                                    <div class="sale pp-sale">Sale</div>
+                                    <div class="icon">
+                                        <i class="icon_heart_all"></i>
+                                    </div>
+                                    <ul>
+                                        <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
+                                        <li class="quick-view"><a href="product.blade.php">+Quick View</a></li>
+                                        <li class="w-icon"><a href=""><i class="fa fa-random"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="pi-text">
+                                    <div class="category-name">Towel</div>
+                                    <a href="#">
+                                        <h5>Thanh Long dep trai</h5>
+                                    </a>
+                                    <div class="product-price">
+                                        14$
+                                        <span>5000$</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="loading-more">
+                    <i class="icon_loading"></i>
+                    <a href="#">Loading More</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Product Shop Section End -->
 
     <!-- Partner Logo Section Begin -->
     <div class="partner-logo">
@@ -240,7 +409,7 @@
                 <div class="col-lg-3">
                     <div class="footer-left">
                         <div class="footer-logo">
-                            <a href="index.html">
+                            <a href="index.blade.php">
                                 <img src="img/footer-logo.png" height="25" alt="">
                             </a>
                         </div>

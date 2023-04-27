@@ -13,8 +13,8 @@ class HomeController extends Controller
         $manProducts = Product::where('featured', true)->where('product_category_id',1)->get();
         $womenProducts = Product::where('featured', true)->where('product_category_id',2)->get();
         
+        $blogs = Blog::orderBy('id', 'desc')-> limit(3) -> get();
 
-
-        return view('front.index', compact('manProducts', 'womenProducts'));
+        return view('front.index', compact('manProducts', 'womenProducts', 'blogs'));
     }
 }

@@ -162,11 +162,10 @@
                 </div>
                 <nav class="nav-menu mobile-menu">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="shop.html">Shop</a></li>
+                        <li class="{{(request()->segment(1) == '') ? 'active' : '' }}"><a href="./">Home</a></li>
+                        <li class="{{(request()->segment(1) == 'shop') ? 'active' : '' }}"><a href="shop">Shop</a></li>
                         <li><a href=""></a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li class="{{(request()->segment(1) == 'contact') ? 'active' : '' }}"><a href="contact">Contact</a></li>
                         <li><a href="">Pages</a>
                             <ul class="dropdown">
                                 <li><a href="blog-details.html">Blog Details</a></li>
@@ -317,6 +316,11 @@
     <script src="front/js/jquery.dd.min.js"></script>
     <script src="front/js/jquery.slicknav.js"></script>
     <script src="front/js/owl.carousel.min.js"></script>
+
+
+    <script src="front/js/owlcarousel2-filter.min"></script>
+
+
     <script src="front/js/main.js"></script>
 </body>
 
